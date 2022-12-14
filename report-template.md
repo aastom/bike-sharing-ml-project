@@ -12,7 +12,7 @@ In my case there wer two negative numbers which were subtituted with zeros.
 
 ### What was the top ranked model that performed?
 
-The top ranked model was WeightedEnsemble_L3, which has a fit_order of 20.
+The top ranked model was WeightedEnsemble_L3, which has a score_val of -50.809726.
 
 ## Exploratory data analysis and feature creation
 
@@ -25,15 +25,15 @@ I also converted the `season` and `weather` features into categories.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 
-The model outperformed the initial model by 57.8%, from 1.76895 to 0.74636.
-This is because the new features empower AutoGluon to increase the number of algorithms which are used to train the model.
+The model outperformed the initial model by 57.44%, from 1.77744 to 0.75644.
+This is because the new features empower AutoGluon to increase the number of algorithms which were used for training the model.
 
 ## Hyper parameter tuning
 
 ### How much better did your model preform after trying different hyper parameters?
 
-The model outperformed the new features-only model by 35.4% and the initial model by 72.7%.
-The hyper parameter tuning model received a score of 0.48232, the new features model received a score of 0.74636, and the initial model received a score of 1.76895.
+The model outperformed the new features-only model by 33.73% and the initial model by 71.80%.
+The hyper parameter tuning model received a score of 0.50132, the new features model received a score of 0.75644, and the initial model received a score of 1.77744.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 
@@ -43,9 +43,9 @@ I would spend more time hyper parameter tuning, experimenting with different eva
 
 | model        | num_bag_folds | num_bag_sets | num_stack_levels | score   |
 | ------------ | ------------- | ------------ | ---------------- | ------- |
-| initial      | 0             | 1            | 0                | 1.76895 |
-| add_features | 0             | 1            | 0                | 0.74636 |
-| hpo          | 5             | 1            | 1                | 0.48232 |
+| initial      | 0             | 1            | 0                | 1.77744 |
+| add_features | 0             | 1            | 0                | 0.75644 |
+| hpo          | 5             | 1            | 1                | 0.50132 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
